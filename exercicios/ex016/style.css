@@ -1,0 +1,10 @@
+* {
+    height: 100%;
+}
+
+body {/* Na cor roxa, quanto mais aumentar a porcentagem, menos espaço ela cobrira na tela (80%).
+    Ao contrário da primeira cor, que caso aumente a porcentagem, irá cobrir uma parcela maior da tela (30%)
+    -145deg é o ângulo por onde irá começar o degradê*/
+    background-image: linear-gradient(-145deg, #FFE394 20%,#FF893E,#F51576,#CB24B9,#5A42EC 80%);
+    background-attachment: fixed;
+}
