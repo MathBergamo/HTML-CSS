@@ -1,0 +1,20 @@
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    background-color: blueviolet;
+    color: aliceblue;
+    text-align: center;
+}
+
+.especial::before {
+    content: '>>';
+    font-weight: lighter;
+}
+
+.especial::after {
+    content: '<<';
+    font-weight: lighter;
+}
