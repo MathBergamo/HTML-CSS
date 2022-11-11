@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    background-color: aqua;
+}
+
+#titulo-principal {
+    background-color: brown;
+    color: burlywood;
+    text-align: left;
+}
+
+p {
+    text-align: center;
+    background-color: chocolate;
+    font-size: 1.5em;
+}
+
+.texto {
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 2em;
+    background-color: white;
+}
