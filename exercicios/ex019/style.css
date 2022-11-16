@@ -1,0 +1,22 @@
+body {
+    font: 12pt Arial;   
+}
+
+.subtitulo {
+    font-size: 1.5em;
+}
+
+.texto {
+    background-color: rgb(249, 255, 161);
+    text-align: center;
+}
+
+p { 
+    text-align: justify;
+    text-indent: 25px;
+}
+
+h2 {
+    font-size: 1.16em;
+}
+
