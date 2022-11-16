@@ -18,3 +18,17 @@ div:hover > p {
     content: '<<';
     font-weight: lighter;
 }
+
+.links::before {
+    content: '=> ';
+    font-weight: bold;
+
+}
+
+a:visited{
+    color: brown;
+}
+
+a:hover{
+    background-color: rgb(167, 203, 204);
+}
