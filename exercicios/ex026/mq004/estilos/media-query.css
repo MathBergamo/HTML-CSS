@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* Todas as demais medias */
+
+/* typical device breakpoints
+Mobile: 360 x 640.
+Mobile: 375 x 667.  - Não terá media screen para mobile, pois ela foi feita no primeiro arquivo style.css
+Mobile: 360 x 720.  - ( Mobile First, portanto, primeiro arquivo de estilo é usado para formato mobile a priori)
+iPhone X: 375 x 812.
+Pixel 2: 411 x 731.
+Tablet: 768 x 1024.
+Laptop: 1366 x 768.
+High-res laptop or desktop: 1920 x 1080. */
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg);/* essa modificação é desnecessária de forma geral, apenas para compreensão do funcionamento das media queries (não se imprime background-image) */
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita atráves do site: www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+#phone{display: none; }
+#tablet{display: none; }
+#print{display: block; }
+#pc{display: none; }
+#tv{display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+#phone{display: none; }
+#tablet{display: block; }
+#print{display: none; }
+#pc{display: none; }
+#tv{display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+#phone{display: none; }
+#tablet{display: none; }
+#print{display: none; }
+#pc{display: block; }
+#tv{display: none; }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+#phone{display: none; }
+#tablet{display: none; }
+#print{display: none; }
+#pc{display: none; }
+#tv{display: block; }
+}
